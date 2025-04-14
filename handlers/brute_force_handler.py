@@ -7,6 +7,7 @@ class BruteForceHandler(BaseHandler):
 
     def handle(self, request: RequestModel) -> bool:
         if self.failed_ips.get(request.ip, 0) >= 5:
+            print(f"IP bloqueada: {request.ip}")
             return False
         return super().handle(request)
     
