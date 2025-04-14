@@ -27,6 +27,17 @@ Este script simula diferentes escenarios de solicitudes, como:
 - Solicitudes desde IPs bloqueadas.
 - El resultado de cada solicitud se imprimirá en la consola, indicando si fue Aceptada o Rechazada.
 
+
+## Colección de Postman
+
+Se incluye una colección de Postman para probar las solicitudes de la API. Puedes encontrarla en la carpeta `documents` con el nombre `ChainOfResponsibility.postman_collection.json`.
+
+### Instrucciones para usar la colección:
+1. Abre Postman.
+2. Ve a **File > Import** y selecciona el archivo `ChainOfResponsibility.postman_collection.json`.
+3. La colección aparecerá en Postman con las solicitudes configuradas para probar los diferentes escenarios.
+
+
 ## Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](./LICENSE).

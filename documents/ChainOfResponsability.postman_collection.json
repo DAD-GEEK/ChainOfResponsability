@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "e5c2042d-05a9-4adf-aa2b-537a153d7b9d",
+		"name": "ChainOfResponsability",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15716213"
+	},
+	"item": [
+		{
+			"name": "Fuerza bruta (fallo 1 a 5)",
+			"item": [
+				{
+					"name": "Fallo 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"credentials\": \"invalido\",\n  \"data\": {\"producto\": \"mouse\"},\n  \"ip\": \"192.168.1.10\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/ordenes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"ordenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fallo 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"credentials\": \"invalido\",\n  \"data\": {\"producto\": \"mouse\"},\n  \"ip\": \"192.168.1.10\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/ordenes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"ordenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fallo 3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"credentials\": \"invalido\",\n  \"data\": {\"producto\": \"mouse\"},\n  \"ip\": \"192.168.1.10\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/ordenes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"ordenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fallo 4",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"credentials\": \"invalido\",\n  \"data\": {\"producto\": \"mouse\"},\n  \"ip\": \"192.168.1.10\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/ordenes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"ordenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fallo 5",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"credentials\": \"invalido\",\n  \"data\": {\"producto\": \"mouse\"},\n  \"ip\": \"192.168.1.10\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/ordenes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"ordenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IP bloqueada con token válido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"credentials\": \"token_valido\",\n  \"data\": {\"producto\": \"mouse\"},\n  \"ip\": \"192.168.1.10\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/ordenes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"ordenes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Credenciales inválidas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"credentials\": \"invalido\",\n  \"data\": {\"producto\": \"libro\"},\n  \"ip\": \"192.168.1.1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ordenes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ordenes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud válida",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"credentials\": \"token_valido\",\n  \"data\": {\"producto\": \"libro\"},\n  \"ip\": \"192.168.1.2\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ordenes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ordenes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud cacheada",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"credentials\": \"token_valido\",\n  \"data\": {\"producto\": \"libro\"},\n  \"ip\": \"192.168.1.3\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ordenes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ordenes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
